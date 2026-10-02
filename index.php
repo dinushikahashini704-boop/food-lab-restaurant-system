@@ -39,7 +39,6 @@ $items = $pdo->query(
     <p>OUR MENU</p>
     <h2>Popular Dishes</h2>
     <div class="cards">
-        <div class="cards">
     <?php foreach ($items as $item): ?>
         <div class="food-card">
             <div class="icon">🍽️</div>
@@ -47,7 +46,6 @@ $items = $pdo->query(
             <p><?= htmlspecialchars($item['description']) ?></p>
             <p class="price">Rs. <?= number_format($item['price'], 2) ?></p>
             <button class="order-button">Order</button>
-        </div>
     <?php endforeach; ?>
 </div>
     </div>
